@@ -8,12 +8,18 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <link
+    <!-- DU-provided FontAwesome link for icons - not working -->
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
-    />
+    /> -->
+    <!-- Added new FontAwesome kit -->
+    <script
+      src="https://kit.fontawesome.com/d706540582.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -30,15 +36,59 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+      <!-- Timeblocks go here -->
       <ul class="time-block">
         <li class="row">
-          <label class="hour">9AM</label>
-          <textarea name="time-block" class="future"></textarea>
-          <!-- <input type="text" name="schedule-event" /> -->
-          <button class="saveBtn">Save Event(s)</button>
+          <label for="event-input" class="hour">9 AM</label>
+          <textarea class="future" name="event-input"></textarea>
+          <button class="saveBtn"><i class="fa-solid fa-lock"></i></button>
+        </li>
+        <li class="row">
+          <label for="event-input" class="hour">10 AM</label>
+          <textarea class="future" name="event-input"></textarea>
+          <button class="saveBtn"><i class="fa-solid fa-lock"></i></button>
+        </li>
+        <li class="row">
+          <label for="event-input" class="hour">11 AM</label>
+          <textarea class="future" name="event-input"></textarea>
+          <button class="saveBtn"><i class="fa-solid fa-lock"></i></button>
+        </li>
+        <li class="row">
+          <label for="event-input" class="hour">12 PM</label>
+          <textarea class="future" name="event-input"></textarea>
+          <button class="saveBtn"><i class="fa-solid fa-lock"></i></button>
+        </li>
+        <li class="row">
+          <label for="event-input" class="hour">1 PM</label>
+          <textarea class="future" name="event-input"></textarea>
+          <button class="saveBtn"><i class="fa-solid fa-lock"></i></button>
+        </li>
+        <li class="row">
+          <label for="event-input" class="hour">2 PM</label>
+          <textarea class="future" name="event-input"></textarea>
+          <button class="saveBtn"><i class="fa-solid fa-lock"></i></button>
+        </li>
+        <li class="row">
+          <label for="event-input" class="hour">3 PM</label>
+          <textarea class="future" name="event-input"></textarea>
+          <button class="saveBtn"><i class="fa-solid fa-lock"></i></button>
+        </li>
+        <li class="row">
+          <label for="event-input" class="hour">4 PM</label>
+          <textarea class="future" name="event-input"></textarea>
+          <button class="saveBtn"><i class="fa-solid fa-lock"></i></button>
+        </li>
+        <li class="row">
+          <label for="event-input" class="hour">5 PM</label>
+          <textarea class="future" name="event-input"></textarea>
+          <button class="saveBtn"><i class="fa-solid fa-lock"></i></button>
+        </li>
+        <li class="row">
+          <label for="event-input" class="hour">6 PM</label>
+          <textarea class="future" name="event-input"></textarea>
+          <button class="saveBtn"><i class="fa-solid fa-lock"></i></button>
         </li>
       </ul>
-      <!-- Timeblocks go here -->
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

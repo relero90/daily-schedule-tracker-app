@@ -4,16 +4,6 @@ body {
   line-height: 1;
 }
 
-/* not currently in HTML */
-textarea {
-  background: transparent;
-  border: none;
-  width: 65vw;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
 /* header element - already created */
 .jumbotron {
   text-align: center;
@@ -44,6 +34,35 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  width: 8vw;
+  text-align: end;
+  padding: 10px;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+  width: 55vw;
+}
+
+/* added to li buttons */
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+  width: 8vw;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 /* class states for if conditionals */
@@ -60,20 +79,4 @@ textarea {
 .future {
   background-color: #77dd77;
   color: white;
-}
-
-/* added to li buttons */
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
-}
-
-/* need to add icon element to saveBtn */
-.saveBtn i:hover {
-  background-color: #ff6961;
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
 }
