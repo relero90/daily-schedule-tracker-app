@@ -18,23 +18,23 @@ body {
   white-space: pre-wrap;
 }
 
-/* added to ul element */
+/* added to container div */
 .time-block {
-  text-align: center;
-  border-radius: 15px;
+  text-align: left;
+  /* border-radius: 15px; */
 }
-/* added to each li */
+/* added to each child div */
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
 }
-/* added to li labels */
+/* added to div labels */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-  width: 8vw;
+  width: 8%;
   text-align: end;
   padding: 10px;
 }
@@ -46,10 +46,10 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-  width: 55vw;
+  width: 70%;
 }
 
-/* added to li buttons */
+/* added to div buttons */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -59,7 +59,7 @@ textarea {
   width: 8vw;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   color: #000000;
   transition: all 0.3s ease-in-out;
