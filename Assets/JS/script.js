@@ -37,33 +37,37 @@ for (var i = 0; i < listItemEl.length; i++) {
 // when user clicks on any saveBtn...
 saveBtn.on("click", function () {
   //   for (var i = 0; i < saveBtn.length; i++) {}
-  //   capture user input in textarea & save to localStorage
-  captureUserInputs();
+  var savedText = listItemEl.children().eq(1).val();
+  savedData.push(savedText);
+  console.log(savedData);
 });
 
-function captureUserInputs() {
-  for (var i = 0; i < userDescr.length; i++) {
-    var savedEvent = userDescr.val();
-    savedData.push(savedEvent);
-    console.log(savedData[0]);
-    console.log(savedEvent);
-  }
-  //   var storedStringInput = JSON.stringify(savedScores);
-  //   localStorage.setItem("storedDataString", storedStringInput);
-}
+//   for (var i = 0; i < saveBtn.length; i++) {}
+//   capture user input in textarea & save to localStorage
+
+// function captureUserInputs() {
+//   for (var i = 0; i < userDescr.length; i++) {
+//     var savedEvent = userDescr.val();
+//     savedData.push(savedEvent);
+//     console.log(savedData[0]);
+//     console.log(savedEvent);
+//   }
+//   //   var storedStringInput = JSON.stringify(savedScores);
+//   //   localStorage.setItem("storedDataString", storedStringInput);
+// }
 // Grabs stored score & initial information and adds it to the current savedScores array
-function renderScoreLog() {
-  scoreBoardEl.textContent = "";
-  // Grabs items from the "storedDataString" that are stored in local storage and changes them back into object items in the array savedScores
-  savedScores = JSON.parse(localStorage.getItem("storedDataString"));
-  // For each item in the savedScores array, create a list item equal to the value of that item; append the li to scoreBoardEl
-  for (var i = 0; i < savedScores.length; i++) {
-    // troubleshoot -
-    // array duplicates old entries when adding new ones (first submit results in 1 <li>, next one 2, then 3...)
-    var pulledScore = savedScores[i];
-    var printedScore = document.createElement("li");
-    printedScore.textContent = pulledScore;
-    printedScore.setAttribute("data-index", i);
-    scoreBoardEl.appendChild(printedScore);
-  }
-}
+// function renderScoreLog() {
+//   scoreBoardEl.textContent = "";
+//   // Grabs items from the "storedDataString" that are stored in local storage and changes them back into object items in the array savedScores
+//   savedScores = JSON.parse(localStorage.getItem("storedDataString"));
+//   // For each item in the savedScores array, create a list item equal to the value of that item; append the li to scoreBoardEl
+//   for (var i = 0; i < savedScores.length; i++) {
+//     // troubleshoot -
+//     // array duplicates old entries when adding new ones (first submit results in 1 <li>, next one 2, then 3...)
+//     var pulledScore = savedScores[i];
+//     var printedScore = document.createElement("li");
+//     printedScore.textContent = pulledScore;
+//     printedScore.setAttribute("data-index", i);
+//     scoreBoardEl.appendChild(printedScore);
+//   }
+// }
