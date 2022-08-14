@@ -1,18 +1,20 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
+/* not currently in HTML */
 textarea {
   background: transparent;
   border: none;
+  width: 65vw;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
 }
-
+/* header element - already created */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -21,27 +23,30 @@ textarea {
   border-bottom: 10px solid black;
 }
 
+/* not currently in HTML */
 .description {
   white-space: pre-wrap;
 }
 
+/* added to ul element */
 .time-block {
   text-align: center;
   border-radius: 15px;
 }
-
+/* added to each li */
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
 }
-
+/* added to li labels */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
+/* class states for if conditionals */
 .past {
   background-color: #d3d3d3;
   color: white;
@@ -57,6 +62,7 @@ textarea {
   color: white;
 }
 
+/* added to li buttons */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -65,7 +71,9 @@ textarea {
   color: white;
 }
 
+/* need to add icon element to saveBtn */
 .saveBtn i:hover {
+  background-color: #ff6961;
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
